@@ -49,18 +49,36 @@ Here the Important point is the memory required for block data in data storage i
 <h3>
 <a id="implemention-of-deduplication-algorithm" class="anchor" href="#implemention-of-deduplication-algorithm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implemention Of DedupLication Algorithm</h3>
 
-<p>In Block-level deduplication we parse the data in terms of blocks.
-<img src="https://cloud.githubusercontent.com/assets/13395805/9023169/21f82642-38ae-11e5-977c-2ad0e508ab95.PNG" alt=""></p>
+<p>In Block-level deduplication we parse the data in terms of blocks.</p>
 
 <p><strong>Steps For Algorithm</strong></p>
 
-<ol>
-<li>parse the data in blocks of 256 MB and generate a 64 bit hash for the same</li>
-<li>Make a Binary search tree using the hash as a key element.</li>
-<li>Each node of a tree maintains a linked list for a repeated blocks that are exactly identical.</li>
-<li>Whenever Find() returns NULL add the node<br>
-</li>
-</ol>
+<pre><code>1. Start
+2. Declare Variable 
+3. Initialize variable
+4. Read 1024 bytes from file in tone iteration
+5. Read from file until reach EOF
+   5.1 Generate Hash Value from strBuff[BLOCKSIZE]
+   5.2 if (FirstBlock) 
+          Consider node as root element
+          Inc BlockCtr
+       else
+          search the generated Hash in BST
+          if (Find Hash == True)
+             Compute the Node
+             Add the Node to a linked List 
+             Change the EndLink of SLL
+          else
+             Add the node in BST
+             Inc The BLockCounter
+6. Calculate Deduplication Ratio
+7. Display the Result for each iteration
+8. END 
+</code></pre>
+
+<p>We have a diagrammatic representation which includes BST and SLL that we are created during parsing of file at block level</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/13395805/9023169/21f82642-38ae-11e5-977c-2ad0e508ab95.PNG" alt=""></p>
 
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
@@ -70,7 +88,7 @@ Here the Important point is the memory required for block data in data storage i
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.rt</p>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
