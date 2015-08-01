@@ -17,18 +17,18 @@
 
     <section class="main-content">
       <h3>
-<a id="welcome-to-tiwari-pages" class="anchor" href="#welcome-to-tiwari-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Tiwari Pages.</h3>
+<a id="what-deduplication-is" class="anchor" href="#what-deduplication-is" aria-hidden="true"><span class="octicon octicon-link"></span></a>What Deduplication Is</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you're using GitHub for Mac or GitHub for Windows, simply sync your repository and you'll see the new branch.</p>
+<p>According to wikipedia, "Data deduplication is a specific form of compression where redundant data is eliminated, typically to improve storage utilization. In the deduplication process, duplicate data is deleted, leaving only one copy of the data to be stored. However, indexing of all data is still retained should that data ever be required. Deduplication is able to reduce the required storage capacity since only the unique data is stored. </p>
+
+<p>lets assume a company having a 1000 employee share a common file say "data.txt" which is 10MB in Size.Each employee do the same changes and save the exact similar 1000 copies of file on server.so estimated storage require to save a file on server side is 10 GB.</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/13395805/9021561/ab1729ee-3865-11e5-824d-1fdc4b5756b6.png" alt=""></p>
+
+<p>Here the point is if All the files are identical then why to upload all the files on server.just save a single copy on server and put a pointers in a users folder that points to a single copy on server.So thats how Data Deduplication technique used to save the TB's of storage.</p>
 
 <h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<div class="highlight highlight-javascript"><pre><span class="pl-c1">TCHAR</span> ptsvValue;
-_tcscpy_s(ptszValue,_tcslen(ptszValue)<span class="pl-k">+</span><span class="pl-c1">1</span>,L<span class="pl-s"><span class="pl-pds">"</span>allocation<span class="pl-pds">"</span></span>);
-_tprintf(<span class="pl-s"><span class="pl-pds">"</span>hello<span class="pl-pds">"</span></span>);</pre></div>
+<a id="implemention-of-deduplication-algorithm" class="anchor" href="#implemention-of-deduplication-algorithm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implemention Of DedupLication Algorithm</h3>
 
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
