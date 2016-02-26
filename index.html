@@ -17,12 +17,12 @@
 
     <section class="main-content">
       <h3>
-<a id="what-deduplication-is" class="anchor" href="#what-deduplication-is" aria-hidden="true"><span class="octicon octicon-link"></span></a>What Deduplication Is</h3>
+<a id="what-deduplication-is" class="anchor" href="#what-deduplication-is" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What Deduplication Is</h3>
 
 <p>According to wikipedia, "Data deduplication is a specific form of compression where redundant data is eliminated, typically to improve storage utilization. In the deduplication process, duplicate data is deleted, leaving only one copy of the data to be stored. However, indexing of all data is still retained should that data ever be required. Deduplication is able to reduce the required storage capacity since only the unique data is stored. </p>
 
 <h3>
-<a id="methods-for-deduplication-algorithm" class="anchor" href="#methods-for-deduplication-algorithm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods For DedupLication Algorithm</h3>
+<a id="methods-for-deduplication-algorithm" class="anchor" href="#methods-for-deduplication-algorithm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Methods For DedupLication Algorithm</h3>
 
 <ol>
 <li>file-level Deduplication</li>
@@ -47,7 +47,7 @@ Here the Important point is the memory required for block data in data storage i
 <p>Block level deduplication is always efficient then file-level deduplication because In file level you have to dump whole file in data storage if its version changed where as in block level you have to dump the changed block which takes comparatively less space in data storage.</p>
 
 <h3>
-<a id="implemention-of-deduplication-algorithm" class="anchor" href="#implemention-of-deduplication-algorithm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implemention Of DedupLication Algorithm</h3>
+<a id="implemention-of-deduplication-algorithm" class="anchor" href="#implemention-of-deduplication-algorithm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implemention Of DedupLication Algorithm</h3>
 
 <p>In Block-level deduplication we parse the data in terms of blocks.</p>
 
@@ -84,7 +84,7 @@ Here the Important point is the memory required for block data in data storage i
 
 <p><strong>Binary Search Tree Structure</strong></p>
 
-<div class="highlight highlight-C"><pre><span class="pl-k">typedef</span> <span class="pl-k">struct</span> treeNode
+<div class="highlight highlight-source-c"><pre><span class="pl-k">typedef</span> <span class="pl-k">struct</span> treeNode
 {
      TCHAR  tszHash[MAX];
      <span class="pl-k">int</span> iBlockNo;
@@ -106,7 +106,7 @@ Here the Important point is the memory required for block data in data storage i
 
 <p><strong>Single Linked List Structure</strong></p>
 
-<div class="highlight highlight-C"><pre><span class="pl-k">struct</span> Sll
+<div class="highlight highlight-source-c"><pre><span class="pl-k">struct</span> Sll
 {
      <span class="pl-k">int</span> iRepBlockNo;
      <span class="pl-k">struct</span> Sll *pLink;
@@ -120,7 +120,7 @@ Here the Important point is the memory required for block data in data storage i
 </ol>
 
 <h3>
-<a id="core-logic-loop" class="anchor" href="#core-logic-loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Core Logic Loop</h3>
+<a id="core-logic-loop" class="anchor" href="#core-logic-loop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Core Logic Loop</h3>
 
 <ol>
 <li>As the loop runs it reads 256 bytes of data in one iteration and generate tha hash for the same .</li>
@@ -146,7 +146,7 @@ Here the Important point is the memory required for block data in data storage i
 
 <p><strong>Syntax</strong></p>
 
-<div class="highlight highlight-C"><pre><span class="pl-k">while</span>(is.read(strBuff,BLOCKSIZE))
+<div class="highlight highlight-source-c"><pre><span class="pl-k">while</span>(is.read(strBuff,BLOCKSIZE))
 {
     <span class="pl-c1">mbstowcs</span>(wcstring, tszBuff,<span class="pl-k">sizeof</span>(tszBuff));
     wstring strTempHash = <span class="pl-c1">HashString</span>(wcstring).<span class="pl-c1">c_str</span>();
@@ -193,7 +193,7 @@ As it shows the output of Block Level Deduplication on 50MB of File</p>
 <p><img src="https://cloud.githubusercontent.com/assets/13395805/9027227/cb417c46-396a-11e5-8721-bad0916c7cdb.PNG" alt=""></p>
 
 <h3>
-<a id="links-and-abbreviation" class="anchor" href="#links-and-abbreviation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links And Abbreviation</h3>
+<a id="links-and-abbreviation" class="anchor" href="#links-and-abbreviation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Links And Abbreviation</h3>
 
 <ol>
 <li>SLL  &lt;- Singly Linked List</li>
@@ -202,7 +202,9 @@ As it shows the output of Block Level Deduplication on 50MB of File</p>
 </ol>
 
 <h3>
-<a id="about-me" class="anchor" href="#about-me" aria-hidden="true"><span class="octicon octicon-link"></span></a>About me</h3>
+<a id="about-me" class="anchor" href="#about-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About me</h3>
+
+<p>An Enthusiastic software developer from Calsoft.Love to do gaming and coding.</p>
 
       <footer class="site-footer">
 
