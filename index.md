@@ -154,4 +154,4 @@ As it shows the output of Block Level Deduplication on 50MB of File
 3. Dedup<- Deduplication
 
 ### About me
-An Enthusiastic software developer from Calsoft.Love to do gaming and coding.
+An Enthusiastic software developer from Harman.Love to do gaming and coding.
